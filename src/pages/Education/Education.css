@@ -1,0 +1,253 @@
+.education-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.education-title {
+    margin-bottom: 2.5rem;
+    font-size: 2.3rem;
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.education-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 2px;
+}
+
+.patient-welcome {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.patient-welcome::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.patient-welcome:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.patient-welcome h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.patient-welcome p {
+    color: #666666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0 0;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.education-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+.education-card:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.education-card-header {
+    border-bottom: 1px solid #f0f4ff;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.education-card-title {
+    font-size: 1.5rem;
+    color: #333333;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.education-card-content {
+    color: #666666;
+    line-height: 1.7;
+}
+
+.education-card-content ul {
+    padding-left: 1.8rem;
+    margin: 1.2rem 0;
+}
+
+.education-card-content li {
+    margin-bottom: 0.7rem;
+    line-height: 1.7;
+}
+
+.education-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.education-resource {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border-radius: 15px;
+    padding: 1.2rem;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+    transition: all 0.3s ease;
+}
+
+.education-resource:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(106, 17, 203, 0.4);
+}
+
+.education-resource-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0.3rem 0;
+    letter-spacing: 1px;
+}
+
+.education-resource-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .education-container {
+        padding: 0 20px;
+    }
+
+    .education-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .patient-welcome {
+        padding: 1.5rem;
+    }
+
+    .patient-welcome h2 {
+        font-size: 1.5rem;
+    }
+
+    .education-grid {
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .education-card {
+        padding: 1.5rem;
+    }
+
+    .education-card-title {
+        font-size: 1.3rem;
+    }
+
+    .education-dashboard-grid {
+        gap: 1rem;
+    }
+
+    .education-card-content ul {
+        padding-left: 1.5rem;
+    }
+
+    .education-resource {
+        padding: 1rem;
+    }
+
+    .education-resource-value {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .education-container {
+        padding: 0 15px;
+    }
+
+    .education-title {
+        font-size: 1.8rem;
+    }
+
+    .patient-welcome {
+        padding: 1.2rem;
+    }
+
+    .patient-welcome h2 {
+        font-size: 1.3rem;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+        padding: 1.2rem;
+    }
+
+    .education-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-resource {
+        padding: 0.9rem;
+    }
+
+    .education-resource-value {
+        font-size: 1.3rem;
+    }
+}
